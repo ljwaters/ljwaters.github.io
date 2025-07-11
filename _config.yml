@@ -6,7 +6,14 @@ url: "https://ljwaters.github.io/" # the base hostname & protocol for your site 
 
 # User settings
 username: Landon Waters
-user_description: Landon Waters is a graduate student at Willamette University studying Data Science. He got his undergrad in Economics and Data Science, minoring in Mathematics. He played varsity football for four years for the Willamette Bearcats.
+user_description: |
+  I came to data science through sports. As a lifelong athlete, I've always been fascinated by the invisible threads that make a team thrive: what turns a good player into a great one, how leadership dynamics shape outcomes, and what numbers can reveal about performance and cohesion. That curiosity launched me into the world of data.
+  
+  At first, economics was just a requirement. But the more I learned, the more I saw how powerful it could be in shaping policy, explaining societal patterns, and advocating for more just outcomes. I realized I could use economics and data science in tandem, bridging technical skill with human insight. 
+  
+  Today, I’m seeking data analyst roles where I can use tools like R, Python, Excel, and SQL not just to optimize profit, but to make meaningful, measurable improvements in people’s lives. I believe data can (and should) drive more human-centric decisions, especially in a world where systems too often overlook the communities they impact. /n I come from a small town filled with small businesses. I’ve seen firsthand how policy, corporate decisions, and economic systems ripple through real people’s lives. No one builds community around a big-box store, but you do build it around your local coffee shop, your barber, your corner grocer. 
+  
+  My goal is to work on teams that ask hard questions, use data to surface invisible impacts, and seek solutions that value people as much as profit. Whether in sports analytics, public policy, or mission-driven business, I want to help organizations see what the numbers are really telling us, and use that insight to create something better.
 user_title: Data Analyst
 email: ljwaters@willamette.edu
 # twitter_username: lorem_ipsum
