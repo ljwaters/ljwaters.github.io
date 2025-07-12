@@ -9,7 +9,10 @@
 * Landon: adding custom image sizes
 */
 .package-icon {
-  height: 40px;
+  height: 75px;
+  width: auto;
   margin: 0 6px;
   vertical-align: middle;
+  display: inline-block;
 }
+
