@@ -12,3 +12,12 @@
   vertical-align: middle;
   display: inline-block;
 }
+.profile-pic {
+  width: 240px;             /* or whatever looks good */
+  max-width: 90vw;
+  display: block;
+  margin: 0 auto 24px auto; /* centers image and adds space below */
+  border-radius: 16px;      /* optional: rounded corners */
+  box-shadow: 0 2px 12px #0002; /* optional: soft shadow */
+}
+
