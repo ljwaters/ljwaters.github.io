@@ -27,36 +27,34 @@
   margin-bottom: 3em;
 }
 
-/* JUSTIFY ONLY THE PARAGRAPHS, NOT THE HEADERS */
-#projects .contents p,
-#projects .contents-right p {
+/* Alternate layout: every even project reverses row direction */
+#projects .user-projects:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Justify only the paragraphs inside the projects section */
+#projects .contents p {
   text-align: justify;
 }
 
-/* Remove text-align: justify from containers! */
-#projects .images-left,
-#projects .images-right,
-#projects .contents,
-#projects .contents-right {
+/* Allow both columns to share the space */
+#projects .images,
+#projects .contents {
   flex: 1 1 50%;
 }
 
-/* Responsive: Stack columns on smaller screens */
+/* Responsive: stack columns on small screens, center images/text */
 @media (max-width: 800px) {
   #projects .user-projects {
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: stretch;
   }
-  #projects .images-right,
-  #projects .images-left,
-  #projects .contents,
-  #projects .contents-right {
+  #projects .images,
+  #projects .contents {
     width: 100%;
     text-align: center;
   }
-  /* Ensure descriptions are still justified even on mobile */
-  #projects .contents p,
-  #projects .contents-right p {
+  #projects .contents p {
     text-align: justify;
   }
 }
