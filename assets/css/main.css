@@ -18,3 +18,37 @@
   display: block;
   margin: 0 auto;
 }
+#projects .user-projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 3em;
+}
+
+#projects .contents,
+#projects .contents-right {
+  text-align: justify;
+}
+
+#projects .images-left,
+#projects .images-right,
+#projects .contents,
+#projects .contents-right {
+  flex: 1 1 50%;
+}
+
+/* Responsive: Stack columns on smaller screens */
+@media (max-width: 800px) {
+  #projects .user-projects {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #projects .images-right,
+  #projects .images-left,
+  #projects .contents,
+  #projects .contents-right {
+    width: 100%;
+    text-align: center;
+  }
+}
