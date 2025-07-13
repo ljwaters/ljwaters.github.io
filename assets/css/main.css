@@ -18,6 +18,7 @@
   display: block;
   margin: 0 auto;
 }
+
 #projects .user-projects {
   display: flex;
   align-items: center;
@@ -26,11 +27,13 @@
   margin-bottom: 3em;
 }
 
-#projects .contents,
-#projects .contents-right {
+/* JUSTIFY ONLY THE PARAGRAPHS, NOT THE HEADERS */
+#projects .contents p,
+#projects .contents-right p {
   text-align: justify;
 }
 
+/* Remove text-align: justify from containers! */
 #projects .images-left,
 #projects .images-right,
 #projects .contents,
@@ -50,5 +53,10 @@
   #projects .contents-right {
     width: 100%;
     text-align: center;
+  }
+  /* Ensure descriptions are still justified even on mobile */
+  #projects .contents p,
+  #projects .contents-right p {
+    text-align: justify;
   }
 }
