@@ -20,8 +20,8 @@
 }
 
 #projects {
-  width: 95%;           /* Adjust for your taste; try 95% if it feels too narrow */
-  max-width: 1200px;     /* Match to about-page or overall content, can increase if you want it wider */
+  width: 90%;           /* Adjust for your taste; try 95% if it feels too narrow */
+  max-width: 1000px;     /* Match to about-page or overall content, can increase if you want it wider */
   margin: 0 auto;       /* Centers the section */
   display: flex;
   flex-direction: column;
