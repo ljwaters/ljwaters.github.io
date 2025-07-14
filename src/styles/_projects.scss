@@ -54,7 +54,7 @@
     padding: 0 2vw;
 
     .user-projects {
-      flex-direction: column;
+      flex-direction: column !important;
       align-items: stretch;
 
       .images, .contents {

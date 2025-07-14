@@ -4909,7 +4909,7 @@ sup, sub {
     padding: 0 2vw;
   }
   #projects .user-projects {
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: stretch;
   }
   #projects .user-projects .images, #projects .user-projects .contents {
