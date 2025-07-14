@@ -1,6 +1,6 @@
 # Landon Waters — Personal Portfolio
 
-Welcome! This repository contains the source code and content for my personal portfolio site, built with the [Particle Jekyll Theme](https://github.com/nrandecker/particle). The site highlights selected projects, research, and experience in data science, analytics, and visualization.
+Welcome! This repository contains the source code and content for my personal portfolio site, built with the [Particle Jekyll Theme](https://github.com/nrandecker/particle) by Nick Randecker. The site highlights selected projects, research, and experience in data science, analytics, and visualization.
 
 ## About
 
@@ -10,6 +10,6 @@ This portfolio showcases:
 - Interactive visualizations and dashboards
 - My background, skills, and contact information
 
-## Credits
+## Contact
 
-Built using the [Particle Jekyll Theme](https://github.com/nrandecker/particle) by Nick Randecker.
+Questions or feedback? Feel free to reach out via the contact links on the site.
