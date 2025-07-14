@@ -1,101 +1,100 @@
 #projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
-  @media only screen and (min-width: $cut) {
-    width: 80%;
-  }
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-.user-projects {
-  margin: 20px auto;
-  img {
+  .user-projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 3em;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .images, .contents {
+      flex: 1 1 50%;
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        transition: transform 0.25s cubic-bezier(.4,2,.7,1), box-shadow 0.25s;
+        border-radius: 8px;
+        max-width: 100%;
+        height: auto;
+
+        &:hover {
+          transform: scale(1.06) translateY(-6px);
+          box-shadow: 0 8px 32px rgba(44,44,44,0.17), 0 2px 8px rgba(44,44,44,0.12);
+          z-index: 2;
+        }
+      }
+    }
+
+    .contents {
+      p {
+        text-align: justify;
+      }
+    }
+  }
+
+  // Responsive: stack image/text on narrow screens
+  @media (max-width: 800px) {
+    width: 99%;
     max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    padding: 0 2vw;
+
+    .user-projects {
+      flex-direction: column;
+      align-items: stretch;
+
+      .images, .contents {
+        width: 100%;
+        text-align: center;
+      }
+      .contents {
+        p {
+          text-align: justify;
+        }
+      }
+    }
   }
-  h5 {
-    margin: 0;
-  }
-  li {
+}
+
+// Retain project-link button styling from your legacy file, but scoped to #projects for clarity
+#projects {
+  .project-link {
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 5px;
     color: $main;
-    font-size: 1.1rem;
-  }
-  p {
-    margin-right: 5px;
-  }
-}
-
-.contents {
-  @media only screen and (min-width: $cut) {
-    margin-left: 0;
-    width: 48%;
-  }
-}
-
-.contents-right {
-  @media only screen and (min-width: $cut) {
-    float: right;
-    margin-top: -5%;
-    width: 48%;
-  }
-}
-.images-right {
-  @media only screen and (min-width: $cut) {
-    float: right;
-    width: 48%;
-  }
-  img {
-    @media only screen and (min-width: $cut) {
-      float: right;
+    background-color: transparent;
+    border: 1px solid $main;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease-out,
+                background-color 0.3s ease-out,
+                border-color 0.3s ease-out;
+    &:hover,
+    &:active {
+      background-color: $purple;
+      border-color: $purple;
+      color: #fff;
+      transition: color 0.3s ease-in,
+                  background-color 0.3s ease-in,
+                  border-color 0.3s ease-in;
     }
-  }
-}
-
-.images-left {
-  @media only screen and (min-width: $cut) {
-    float: left;
-    width: 48%;
-  }
-  img {
-    @media only screen and (min-width: $cut) {
-      float: left;
-    }
-  }
-}
-
-.project-link {
-  display: inline-block;
-  margin: 10px 0px;
-  padding: 5px;
-  color: $main;
-  background-color: transparent;
-  border: 1px solid $main;
-  border-radius: 10px;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.3s ease-out,
-              background-color 0.3s ease-out,
-              border-color 0.3s ease-out;
-  &:hover {
-    background-color: $purple;
-    border-color: $purple;
-    color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
-  }
-  &:active {
-    background-color: $purple;
-    border-color: $purple;
-    color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
   }
 }
